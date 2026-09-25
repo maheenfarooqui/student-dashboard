@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Lobster&family=Playwrite+AU+TAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
 @import "tailwindcss";
+ @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-averia: "Averia Libre", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-lobster: "Lobster", cursive;
+  --font-playwrite: "Playwrite AU TAS", cursive;
+  --font-roboto: "Roboto", sans-serif;
+  --font-signika: "Signika", sans-serif;
+}
+
+body {
+  font-family: "Averia Libre", sans-serif;
+}

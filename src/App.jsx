@@ -1,12 +1,24 @@
+import { ThemeProvider } from "./context/Theme";
+import { UserProvider } from "./context/User";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
+import Setting from "./components/Setting";
+
 
 function App() {
-
-
   return (
     <>
-   <div className="bg-red-400">hello</div>
+      <ThemeProvider>
+        <UserProvider>
+          <div>
+            <Navbar />
+            <Setting />
+            <Profile/>
+          </div>
+        </UserProvider>
+      </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
